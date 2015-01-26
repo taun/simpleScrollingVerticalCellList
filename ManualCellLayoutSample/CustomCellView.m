@@ -41,6 +41,9 @@
     
 }
 
+/*!
+ We replace add the missing textView height constraint here and save it as a property for future changes to the height.
+ */
 -(void)awakeFromNib {
     _textViewHeightConstraint = [NSLayoutConstraint constraintWithItem: self.textView
                                                              attribute: NSLayoutAttributeHeight
@@ -70,7 +73,9 @@
 -(void) updateHeightConstraint {
     self.textViewHeightConstraint.constant = (CGFloat)self.textViewHeight;
 }
-
+/*!
+ Example of animating a change in a constraint.
+ */
 -(void) animateConstraintChanges {
     [self layoutIfNeeded]; // Ensures that all pending layout operations have been completed
     [UIView animateWithDuration: 1.5 animations:^{

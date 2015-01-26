@@ -10,6 +10,10 @@
 #import "NSLayoutConstraint+MDBAddons.h"
 
 @interface SimpleVerticalCellLayout ()
+/*!
+ The views lastBounds is saved so we know if the view has change due to window resizing or other changes. 
+ This is critical. The view almost always changes size when first loading and changes to this property is what triggers the fresh layout.
+ */
 @property (nonatomic,assign) CGRect                         lastBounds;
 @end
 
@@ -64,7 +68,10 @@
     
     [self setNeedsUpdateConstraints];
 }
-
+/*!
+ This assumes the only subviews are cells. For more complicated scenarios, one would need a separate property to track the cells
+ and perhaps associate them to the model property being listed.
+ */
 -(void) updateConstraints {
     if (self.subviews.count > 0) {
         [self removeConstraints: self.constraints];
@@ -86,7 +93,10 @@
     
     [super updateConstraints];
 }
-
+/*!
+ Critical to the working of this technique. We need to trigger layoutSubviews but only if there has been a change to require a new layout. In this case,
+ the change is the view bounds. This allows a recursive call of layoutSubviews until the bounds stops changing and we have a stable solution.
+ */
 -(void) layoutSubviews {
     [super layoutSubviews];
     

@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SimpleVerticalCellLayout.h"
 
-
+/*!
+ Stock Controller except for modifying UIScrollView insets and calling setNeedsLayout on our custom layout class.
+ */
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIScrollView               *scrollView;

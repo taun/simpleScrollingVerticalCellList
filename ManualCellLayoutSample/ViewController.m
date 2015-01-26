@@ -14,9 +14,12 @@
 
 @implementation ViewController
 
+/*!
+ Show how to add scrollView insets so the Cells are not under a navBar or tabBar.
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     CGFloat topInset = 60.0;
     CGFloat bottomInset = 60.0;
     
@@ -25,6 +28,9 @@
     self.scrollView.contentInset = edgeInsets;
     self.scrollView.scrollIndicatorInsets = edgeInsets;
 }
+/*!
+ The controller needs to call setNeedsLayout directly to our UIScrollView SimpleVerticalCellLayout in the UIScrollView.
+ */
 -(void) viewWillLayoutSubviews {
 
     [self.simpleVerticalCellLayout setNeedsLayout];
