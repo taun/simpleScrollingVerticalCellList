@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>568BBECE-CA72-41C4-82D4-737CD581D0AF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ManualCellLayoutSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>619416DF824521EB0B379E2106C326C886A26349</key>
+		<string>https://github.com/taun/simpleScrollingVerticalCellList</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ManualCellLayoutSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>619416DF824521EB0B379E2106C326C886A26349</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/taun/simpleScrollingVerticalCellList</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>619416DF824521EB0B379E2106C326C886A26349</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>619416DF824521EB0B379E2106C326C886A26349</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ManualCellLayoutSample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
