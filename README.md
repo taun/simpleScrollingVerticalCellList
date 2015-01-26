@@ -2,7 +2,7 @@
 A very rough and basic sample iOS app showing table style cell layout with constraints and a standalone scrollview.
 
 The is a very rough draft demo app showing how to get an effect similar to a UITableVIew or UICollectionView but using autolayout
-for the flow. It also show autoresizing of the individual cells with animation. It does not show the customCell interfacing with a model object.
+for the flow. It also shows autoresizing of the individual cells with animation. It does not show the customCell interfacing with a model object.
 Nor does it implement any of the features of the standard UITableView and UICollectionView such as selection highlighting, addition, deletion, ...
 
 This demo also uses the technique of setting the width of UIScrollView content by creating an autolayout reference from a UIScrollView
