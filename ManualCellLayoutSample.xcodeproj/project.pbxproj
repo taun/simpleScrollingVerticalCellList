@@ -14,6 +14,10 @@
 		C5A45D781A76C00F007AE87E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A45D771A76C00F007AE87E /* Images.xcassets */; };
 		C5A45D7B1A76C00F007AE87E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A45D791A76C00F007AE87E /* LaunchScreen.xib */; };
 		C5A45D871A76C00F007AE87E /* ManualCellLayoutSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A45D861A76C00F007AE87E /* ManualCellLayoutSampleTests.m */; };
+		C5A45D941A76C39D007AE87E /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A45D931A76C39D007AE87E /* CustomCellView.xib */; };
+		C5A45D971A76C3FE007AE87E /* CustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A45D961A76C3FE007AE87E /* CustomCellView.m */; };
+		C5A45D9A1A76C7FE007AE87E /* SimpleVerticalCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A45D991A76C7FE007AE87E /* SimpleVerticalCellLayout.m */; };
+		C5A45D9D1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A45D9C1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		C5A45D801A76C00F007AE87E /* ManualCellLayoutSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualCellLayoutSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A45D851A76C00F007AE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A45D861A76C00F007AE87E /* ManualCellLayoutSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualCellLayoutSampleTests.m; sourceTree = "<group>"; };
+		C5A45D931A76C39D007AE87E /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		C5A45D951A76C3FE007AE87E /* CustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellView.h; sourceTree = "<group>"; };
+		C5A45D961A76C3FE007AE87E /* CustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellView.m; sourceTree = "<group>"; };
+		C5A45D981A76C7FE007AE87E /* SimpleVerticalCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleVerticalCellLayout.h; sourceTree = "<group>"; };
+		C5A45D991A76C7FE007AE87E /* SimpleVerticalCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleVerticalCellLayout.m; sourceTree = "<group>"; };
+		C5A45D9B1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MDBAddons.h"; sourceTree = "<group>"; };
+		C5A45D9C1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MDBAddons.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,8 @@
 		C5A45D691A76C00F007AE87E /* ManualCellLayoutSample */ = {
 			isa = PBXGroup;
 			children = (
+				C5A45D9B1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.h */,
+				C5A45D9C1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.m */,
 				C5A45D6E1A76C00F007AE87E /* AppDelegate.h */,
 				C5A45D6F1A76C00F007AE87E /* AppDelegate.m */,
 				C5A45D711A76C00F007AE87E /* ViewController.h */,
@@ -89,6 +102,11 @@
 				C5A45D771A76C00F007AE87E /* Images.xcassets */,
 				C5A45D791A76C00F007AE87E /* LaunchScreen.xib */,
 				C5A45D6A1A76C00F007AE87E /* Supporting Files */,
+				C5A45D931A76C39D007AE87E /* CustomCellView.xib */,
+				C5A45D951A76C3FE007AE87E /* CustomCellView.h */,
+				C5A45D961A76C3FE007AE87E /* CustomCellView.m */,
+				C5A45D981A76C7FE007AE87E /* SimpleVerticalCellLayout.h */,
+				C5A45D991A76C7FE007AE87E /* SimpleVerticalCellLayout.m */,
 			);
 			path = ManualCellLayoutSample;
 			sourceTree = "<group>";
@@ -200,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A45D761A76C00F007AE87E /* Main.storyboard in Resources */,
+				C5A45D941A76C39D007AE87E /* CustomCellView.xib in Resources */,
 				C5A45D7B1A76C00F007AE87E /* LaunchScreen.xib in Resources */,
 				C5A45D781A76C00F007AE87E /* Images.xcassets in Resources */,
 			);
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A45D9D1A76CBF2007AE87E /* NSLayoutConstraint+MDBAddons.m in Sources */,
 				C5A45D731A76C00F007AE87E /* ViewController.m in Sources */,
+				C5A45D971A76C3FE007AE87E /* CustomCellView.m in Sources */,
 				C5A45D701A76C00F007AE87E /* AppDelegate.m in Sources */,
 				C5A45D6D1A76C00F007AE87E /* main.m in Sources */,
+				C5A45D9A1A76C7FE007AE87E /* SimpleVerticalCellLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

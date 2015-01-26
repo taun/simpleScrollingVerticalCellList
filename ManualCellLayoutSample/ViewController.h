@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimpleVerticalCellLayout.h"
+
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView               *scrollView;
+@property (weak, nonatomic) IBOutlet SimpleVerticalCellLayout   *simpleVerticalCellLayout;
 
 @end
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCellView">
+            <rect key="frame" x="0.0" y="0.0" width="597" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some text label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-va-wgF">
+                    <rect key="frame" x="8" y="8" width="119.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgA-ir-Dom">
+                    <rect key="frame" x="8" y="37" width="581" height="98"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" placeholder="YES" id="U4I-pT-iRZ"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21M-33-hs0">
+                    <rect key="frame" x="547" y="8" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXN-Ko-5fe">
+                    <rect key="frame" x="462" y="8" width="77" height="21"/>
+                    <state key="normal" title="Randomize">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="randomizeHeight:" destination="iN0-l3-epB" eventType="touchUpInside" id="90h-vz-1p0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Wbi-va-wgF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="1eg-3r-il2"/>
+                <constraint firstItem="Wbi-va-wgF" firstAttribute="top" secondItem="21M-33-hs0" secondAttribute="top" id="4OZ-gQ-tLu"/>
+                <constraint firstItem="21M-33-hs0" firstAttribute="leading" secondItem="pXN-Ko-5fe" secondAttribute="trailing" constant="8" id="94h-Ru-lwH"/>
+                <constraint firstItem="Wbi-va-wgF" firstAttribute="height" secondItem="21M-33-hs0" secondAttribute="height" id="BsZ-ep-61i"/>
+                <constraint firstItem="wgA-ir-Dom" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="FPl-lL-JMX"/>
+                <constraint firstAttribute="trailing" secondItem="21M-33-hs0" secondAttribute="trailing" constant="8" id="IkB-h2-XXn"/>
+                <constraint firstItem="pXN-Ko-5fe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wbi-va-wgF" secondAttribute="trailing" constant="20" id="Q6r-yu-Ndk"/>
+                <constraint firstItem="Wbi-va-wgF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TFY-9V-bBB"/>
+                <constraint firstAttribute="bottom" secondItem="wgA-ir-Dom" secondAttribute="bottom" constant="8" id="Y2C-Yh-xce"/>
+                <constraint firstItem="pXN-Ko-5fe" firstAttribute="height" secondItem="21M-33-hs0" secondAttribute="height" id="YUA-qL-idA"/>
+                <constraint firstAttribute="trailing" secondItem="wgA-ir-Dom" secondAttribute="trailing" constant="8" id="ZlS-hN-VYG"/>
+                <constraint firstItem="pXN-Ko-5fe" firstAttribute="top" secondItem="21M-33-hs0" secondAttribute="top" id="lIE-bH-dwc"/>
+                <constraint firstItem="21M-33-hs0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wbi-va-wgF" secondAttribute="trailing" constant="20" id="uZF-Bf-A3B"/>
+                <constraint firstItem="wgA-ir-Dom" firstAttribute="top" secondItem="Wbi-va-wgF" secondAttribute="bottom" constant="8" id="w9C-Tc-VFV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="uZF-Bf-A3B"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="textLabel" destination="Wbi-va-wgF" id="QCE-wI-0fn"/>
+                <outlet property="textView" destination="wgA-ir-Dom" id="u2l-9W-PVM"/>
+                <outlet property="textViewHeightValue" destination="21M-33-hs0" id="jwM-eM-827"/>
+            </connections>
+            <point key="canvasLocation" x="148.5" y="242.5"/>
+        </view>
+    </objects>
+</document>

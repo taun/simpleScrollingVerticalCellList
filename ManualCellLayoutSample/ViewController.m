@@ -17,7 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGFloat topInset = 60.0;
+    CGFloat bottomInset = 60.0;
+    
+    UIEdgeInsets edgeInsets = UIEdgeInsetsMake(topInset, 0, bottomInset, 0);
+    
+    self.scrollView.contentInset = edgeInsets;
+    self.scrollView.scrollIndicatorInsets = edgeInsets;
 }
+-(void) viewWillLayoutSubviews {
+
+    [self.simpleVerticalCellLayout setNeedsLayout];
+
+    [super viewWillLayoutSubviews];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
