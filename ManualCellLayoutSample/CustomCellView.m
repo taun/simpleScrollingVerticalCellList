@@ -36,30 +36,30 @@
 
 -(void) setupDefaults {
     self.translatesAutoresizingMaskIntoConstraints = NO;
+    _textView.translatesAutoresizingMaskIntoConstraints = NO;
+    _textViewHeight = 98;
     
-    _textViewHeight = 70;
-    
+}
+
+-(void)awakeFromNib {
+    _textViewHeightConstraint = [NSLayoutConstraint constraintWithItem: self.textView
+                                                             attribute: NSLayoutAttributeHeight
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: nil
+                                                             attribute:NSLayoutAttributeNotAnAttribute
+                                                            multiplier: 1.0
+                                                              constant: (CGFloat)_textViewHeight];
+    [self addConstraint: _textViewHeightConstraint];
 }
 
 -(void) setTextViewHeight:(NSUInteger)textViewHeight {
     _textViewHeight = textViewHeight;
     
     self.textViewHeightValue.text = [NSString stringWithFormat: @"%lu", _textViewHeight];
-    [self animateConstraintChanges];
+    [self setNeedsLayout];
 }
 
 -(void) updateConstraints {
-    
-    if (!_textViewHeightConstraint) {
-        _textViewHeightConstraint = [NSLayoutConstraint constraintWithItem: self.textView
-                                                                 attribute: NSLayoutAttributeHeight
-                                                                 relatedBy: NSLayoutRelationEqual
-                                                                    toItem: nil
-                                                                 attribute:NSLayoutAttributeNotAnAttribute
-                                                                multiplier: 1.0
-                                                                  constant: (CGFloat)self.textViewHeight];
-        [self addConstraint: _textViewHeightConstraint];
-    }
     
     [self updateHeightConstraint];
     
@@ -84,5 +84,6 @@
 
 - (IBAction)randomizeHeight:(id)sender {
     self.textViewHeight = (NSUInteger)(70.0 + rand() % 130);
+    [self animateConstraintChanges];
 }
 @end
